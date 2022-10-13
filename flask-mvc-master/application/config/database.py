@@ -7,8 +7,8 @@ from flask_mysqldb import MySQL
 class Database:
 
   app.config['MYSQL_HOST'] = '127.0.0.1'
-  app.config['MYSQL_USER'] = 'carlo'
-  app.config['MYSQL_PASSWORD'] = '87211902CBA82330BD7E6D2D6E0DC077B7E940EB'
+  app.config['MYSQL_USER'] = 'root'
+  app.config['MYSQL_PASSWORD'] = 'oscarescamilla26'
   app.config['MYSQL_DB'] = 'flask_crud'
   mysql = MySQL(app)
 
@@ -59,7 +59,7 @@ app.config['MYSQL_DB'] = keys['database']
 
 app.secret_key = 'mysecret'
 
-mysql = MySQL(app)  
+mysql = MySQL(app)
 
 #con = mysql.connection.cursor() #instanciamos la conexion
 """
